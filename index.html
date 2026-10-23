@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manager Library · Gestión de biblioteca</title>
+    <meta
+      name="description"
+      content="Manager Library lleva el catálogo, los socios y los préstamos de una biblioteca pequeña, y muestra qué libros se prestan más."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <span class="brand">Manager Library</span>
+        <ul>
+          <li><a href="#que-hace">Qué hace</a></li>
+          <li><a href="#reglas">Reglas</a></li>
+          <li><a href="#quien">Quién lo usa</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-text">
+        <h1>La biblioteca, al día</h1>
+        <p>
+          Catálogo, socios y préstamos en un solo sitio. Sin hojas de cálculo, sin libros
+          que nadie sabe dónde están y sin discutir quién se llevó el último ejemplar.
+        </p>
+        <p class="note">Sitio de presentación. La aplicación de operación va aparte.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="que-hace">
+        <h2>Qué hace</h2>
+        <div class="grid">
+          <article>
+            <h3>Catálogo</h3>
+            <p>
+              Título, autor, ISBN, categoría y cuántos ejemplares hay. Búsqueda por texto
+              parcial y filtro por categoría, con portada opcional.
+            </p>
+          </article>
+          <article>
+            <h3>Socios</h3>
+            <p>
+              Nombre y documento, sin duplicados. Los socios no entran al sistema: son un
+              dato de la biblioteca, no usuarios.
+            </p>
+          </article>
+          <article>
+            <h3>Préstamos</h3>
+            <p>
+              Hasta tres libros por préstamo, con catorce días de plazo. Cada libro se
+              devuelve por separado y el inventario se ajusta en el momento.
+            </p>
+          </article>
+          <article>
+            <h3>Vencidos</h3>
+            <p>
+              Qué libro, qué socio y cuántos días lleva de retraso, ordenado por el más
+              atrasado primero.
+            </p>
+          </article>
+          <article>
+            <h3>Más prestados</h3>
+            <p>
+              Qué se mueve y qué se queda en el estante, por rango de fechas. Un reporte
+              de un mes cerrado no cambia después.
+            </p>
+          </article>
+          <article>
+            <h3>Dos roles</h3>
+            <p>
+              El administrador mantiene el catálogo y ve los reportes. El bibliotecario
+              presta, recibe y consulta.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reglas" class="band">
+        <h2>Las reglas que no se negocian</h2>
+        <ul class="rules">
+          <li><strong>14 días</strong> de plazo, contados desde el momento del préstamo.</li>
+          <li><strong>3 libros</strong> como máximo sin devolver por socio.</li>
+          <li>Quien tenga algo <strong>vencido</strong> no pide más hasta devolverlo.</li>
+          <li>Los ejemplares disponibles nunca bajan de cero ni pasan del total.</li>
+          <li>Un préstamo registrado <strong>no se edita ni se borra</strong>.</li>
+          <li>Un libro retirado del catálogo sigue en el historial de préstamos.</li>
+        </ul>
+      </section>
+
+      <section id="quien">
+        <h2>Para quién es</h2>
+        <p class="wide">
+          Para la biblioteca de un colegio, un barrio o una fundación: la que tiene unos
+          miles de libros, dos personas en el mostrador y ningún presupuesto para un
+          sistema grande. Lo que necesita es saber qué hay, quién lo tiene y desde cuándo.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Manager Library · Prueba técnica SDD · Ficha ADSO 3239137</p>
+    </footer>
+  </body>
+</html>
